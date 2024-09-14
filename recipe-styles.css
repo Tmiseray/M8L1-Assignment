@@ -1,0 +1,147 @@
+/* 
+    - Apply different font families, sizes, and styles to the recipe title, ingredients, and steps.
+    - Set the background color of the header and footer.
+    - Add padding and margin to elements to enhance spacing and layout.
+    - Create a border around the recipe to separate it from the rest of the page.
+    - Use different colors for text and background to improve readability.
+    - Apply hover effects to links within the recipe, such as the recipe source link.
+    - Utilize class, id, and at least 1 combinator selector when styling your CSS. 
+*/
+
+/* Recipe Title */
+/* Cookie */
+@import url(https://fonts.googleapis.com/css2?family=Cookie&display=swap);
+
+/* Ingredients */
+/* Arsenal SC */
+@import url(https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+
+/* Steps */
+/* Poppins */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+/* Description Paragraph */
+/* Raleway */
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+
+header {
+    background-color: navajowhite;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Cookie', Impact,'Arial Narrow Bold';
+    font-weight: bold;
+    font-size: 66px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+h1 + p {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.full-recipe {
+    border: 5px outset #ddd;
+    padding: 40px;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    box-shadow: 4px 4px 4px 4px rgba(50, 50, 50, 0.6);
+}
+
+.recipe-details {
+    margin-top: -30px;
+    margin-bottom: 50px;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+#details {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 + p {
+    font-size: 26px;
+    margin-top: -10px;
+}
+
+.recipe-ingredients {
+    font-family: 'Arsenal SC', Verdana, sans-serif;
+}
+
+#ingredients {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3 + ul {
+    font-size: 28px;
+    margin-top: -20px;
+}
+
+.recipe-steps {
+    font-family: 'Poppins', 'Lucida Sans', sans-serif;
+}
+
+#steps {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 + ol {
+    font-size: 22px;
+}
+
+hr + br + p {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: burlywood;
+    color: brown;
+    padding: 20px;
+}
+
+.ghirardelli {
+    text-align: center;
+    font-size: 24px;
+    /* font-weight: bold; */
+    /* padding: 5px; */
+}
+
+.ghirardelli a:hover {
+    /* font-size: 26px; */
+    cursor: pointer;
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    color: whitesmoke;
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* 
+    Task 2: 
+    Use CSS to style the button with hover effects using pseudo-classes (:hover). Ensure that the button stands out and invites users to click.
+
+    Expected Outcome: 
+    Apply CSS pseudo-class styling to add visual appeal and provide additional queues to users.
+
+    Maybe implement this in a Side Bar Menu towards the bottom
+    Have page navigations and then the recipe submission button last
+*/
