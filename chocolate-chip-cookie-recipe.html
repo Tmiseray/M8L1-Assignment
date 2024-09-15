@@ -6,10 +6,11 @@
         <meta name="description" content="A showcase of HTML skills using a recipe">
         <meta name="author" content="Taylor Miseray">
         <link rel="stylesheet" href="recipe-styles.css">
+        <link rel="stylesheet" href="menu-styles.css">
     </head>
     
     <body>
-        <header>
+        <header id="home">
             <img src="https://www.ghirardelli.com/media/recipe/ChocolateChipCookies_27987.jpg" width="100%" alt="Ghirardelli Chocolate Chip Cookies Picture">
             <!-- Background for Header -->
     
@@ -20,61 +21,73 @@
         <br>    
         <hr>
         <br>
-        <!-- Border Around Recipe -->
-        <section class="full-recipe">
-            <article class="recipe-details">
-                <h2 id="details">Recipe Details:</h2>
-                <p><strong>Servings:</strong> 4 Dozen Cookies <br><strong>Cooktime:</strong> 10 minutes <br><strong>Difficulty:</strong> Easy</p>
-            </article>
-            <hr>
-            <article class="recipe-ingredients">
-                <!-- Font Family, Size, Style -->
-                <h3 id="ingredients">Ingredients:</h3>
-                <ul>
-                    <li>1 cup (2 sticks) Unsalted Butter, <i>softened</i></li>
-                    <li>3/4 cup Granulated Sugar</li>
-                    <li>3/4 cup Brown Sugar, <i>packed</i></li>
-                    <li>2 teaspoons Vanilla Extract</li>
-                    <li>2 large Eggs</li>
-                    <li>2 1/4 cups All-Purpose Flour</li>
-                    <li>1 teaspoon Baking Soda</li>
-                    <li>1/2 teaspoon Salt</li>
-                    <li>2 cups Semisweet Chocolate Chips</li>
-                    <li>1 cup Chopped Nuts (<i>optional</i>)</li>
+        <main>
+            <nav class="recipe-menu">
+                <ul class="recipe-menu-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recipe-details">Recipe Details</a></li>
+                    <li><a href="#recipe-ingredients">Ingredients</a></li>
+                    <li><a href="#recipe-steps">Steps</a></li>
+                    <li><button><a style="font-family: 'Yeseva One'; font-size: 20px;" href=recipe-submission-form.html>Recipe Submission</a></button></li>
                 </ul>
-            </article>
+
+            </nav>
+            <!-- Border Around Recipe -->
+            <section class="full-recipe">
+                <article class="recipe-details" id="recipe-details">
+                    <h2 id="details">Recipe Details:</h2>
+                    <p><strong>Servings:</strong> 4 Dozen Cookies <br><strong>Cooktime:</strong> 10 minutes <br><strong>Difficulty:</strong> Easy</p>
+                </article>
+                <hr>
+                <article class="recipe-ingredients" id="recipe-ingredients">
+                    <!-- Font Family, Size, Style -->
+                    <h3 id="ingredients">Ingredients:</h3>
+                    <ul>
+                        <li>1 cup (2 sticks) Unsalted Butter, <i>softened</i></li>
+                        <li>3/4 cup Granulated Sugar</li>
+                        <li>3/4 cup Brown Sugar, <i>packed</i></li>
+                        <li>2 teaspoons Vanilla Extract</li>
+                        <li>2 large Eggs</li>
+                        <li>2 1/4 cups All-Purpose Flour</li>
+                        <li>1 teaspoon Baking Soda</li>
+                        <li>1/2 teaspoon Salt</li>
+                        <li>2 cups Semisweet Chocolate Chips</li>
+                        <li>1 cup Chopped Nuts (<i>optional</i>)</li>
+                    </ul>
+                </article>
+                <hr>
+                <article class="recipe-steps" id="recipe-steps">
+                    <!-- Font Family, Size, Style -->
+                    <h3 id="steps">Steps:</h3>
+                    <ol>
+                        <li><b>Preheat</b> the oven to 375°F (190°C). <br>Line baking sheets with parchment paper or silicone baking mats.</li>
+                        <li>In a large mixing bowl, cream together the <b><i>softened</i> butter</b>, <b>granulated sugar</b>, <b>brown sugar</b>, and <b>vanilla extract</b> until light and fluffy.</li>
+                        <li>Add the <b>eggs</b>, <em>one at a time</em>, beating well after each addition.</li>
+                        <li>In a separate bowl, whisk together the <b>flour</b>, <b>baking soda</b>, and <b>salt</b>. <br><em>Gradually</em> add the dry ingredients to the wet ingredients, mixing until just combined.</li>
+                        <li>Stir in the <b>chocolate chips</b> and <b>chopped nuts</b> (<i>if using</i>) until evenly distributed throughout the dough.</li>
+                        <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about <b><i>2 inches apart</i></b>.</li>
+                        <li>Bake in the preheated oven for <strong>9 to 11 minutes</strong>, <em>or until the edges are golden brown</em>.</li>
+                        <li><b>Remove</b> from the oven and allow the cookies to <em>cool</em> on the baking sheets for a few minutes before transferring them to wire racks to cool completely.</li>
+                    </ol>
+                </article>
+                <br>
+                <hr>
+                <br>
+                <p>Don't forget to <b><em>enjoy</em></b> your Classic Chocolate Chip Cookies with a tall glass of <b><em>milk</em></b> <br> &ndash; <font size="5"><strong>the perfect combination!</strong></font></p>
+            </section>
             <hr>
-            <article class="recipe-steps">
-                <!-- Font Family, Size, Style -->
-                <h3 id="steps">Steps:</h3>
-                <ol>
-                    <li><b>Preheat</b> the oven to 375°F (190°C). <br>Line baking sheets with parchment paper or silicone baking mats.</li>
-                    <li>In a large mixing bowl, cream together the <b><i>softened</i> butter</b>, <b>granulated sugar</b>, <b>brown sugar</b>, and <b>vanilla extract</b> until light and fluffy.</li>
-                    <li>Add the <b>eggs</b>, <em>one at a time</em>, beating well after each addition.</li>
-                    <li>In a separate bowl, whisk together the <b>flour</b>, <b>baking soda</b>, and <b>salt</b>. <br><em>Gradually</em> add the dry ingredients to the wet ingredients, mixing until just combined.</li>
-                    <li>Stir in the <b>chocolate chips</b> and <b>chopped nuts</b> (<i>if using</i>) until evenly distributed throughout the dough.</li>
-                    <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about <b><i>2 inches apart</i></b>.</li>
-                    <li>Bake in the preheated oven for <strong>9 to 11 minutes</strong>, <em>or until the edges are golden brown</em>.</li>
-                    <li><b>Remove</b> from the oven and allow the cookies to <em>cool</em> on the baking sheets for a few minutes before transferring them to wire racks to cool completely.</li>
-                </ol>
-            </article>
-            <br>
-            <hr>
-            <br>
-            <p>Don't forget to <b><em>enjoy</em></b> your Classic Chocolate Chip Cookies with a tall glass of <b><em>milk</em></b> <br> &ndash; <font size="5"><strong>the perfect combination!</strong></font></p>
-        </section>
-        <hr>
-        <footer>
-            <!-- Hover Effect for Link -->
-            <div class="ghirardelli">Reference Recipe:<a href="https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016"> Classic Chocolate Chip Cookies Recipe </a>By: Ghirardelli Chocolate</div>
-        </footer>
-
-
-        <!-- 
-        Task 1: 
-        Create an HTML file containing a button that links to a separate page for recipe submission. Include elements such as <button> with appropriate attributes and an anchor tag <a> to link to the submission page.
-        -->
-
-        <!-- Background for Footer -->
+            <footer>
+                <!-- Hover Effect for Link -->
+                <div class="ghirardelli">Reference Recipe: <a href="https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016"> Classic Chocolate Chip Cookies Recipe </a><br>By: Ghirardelli Chocolate</div>
+            </footer>
+    
+    
+            <!-- 
+            Task 1: 
+            Create an HTML file containing a button that links to a separate page for recipe submission. Include elements such as <button> with appropriate attributes and an anchor tag <a> to link to the submission page.
+            -->
+    
+            <!-- Background for Footer -->
+        </main>
     </body>
 </html>

@@ -5,3 +5,86 @@
 /* Recipe Submission Button */
 /* Yeseva One */
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+.recipe-menu {
+    height: 100%;
+    width: 130px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+.recipe-menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-menu li, .recipe-menu a {
+    width: 130px;
+    font-family: 'Ysabeau SC';
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 24px;
+    text-align: center;
+    color: saddlebrown;
+    height: 100%;
+}
+
+.recipe-menu-items li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.recipe-menu-items a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: saddlebrown;
+    font-size: 22px;
+    text-align: center;
+}
+
+button {
+    padding: 2px;
+    border: 3px outset #ddd;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+.recipe-menu a:visited {
+    color: rgb(0, 100, 0, 0.75);
+}
+
+.about-me-menu-items a:visited {
+    color: rgb(0, 100, 0, 0.75);
+}
+
+.recipe-menu a:hover {
+    cursor: pointer;
+    background-color: darkolivegreen !important;
+    color: whitesmoke !important;
+    text-shadow: none !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+.recipe-menu-items a:hover {
+    cursor: pointer;
+    background-color: darkolivegreen !important;
+    color: whitesmoke !important;
+    text-shadow: none !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+

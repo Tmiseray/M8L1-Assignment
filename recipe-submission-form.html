@@ -4,3 +4,124 @@ Task 3:
 Create a separate HTML file for the recipe submission form. Include form elements such as <form>, <input> fields for recipe name, ingredients, and instructions, and a submit button <button>.
  
 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe Submission Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A showcase of HTML skills using a submission form">
+        <meta name="author" content="Taylor Miseray">
+        <link rel="stylesheet" href="menu-styles.css">
+        <link rel="stylesheet" href="form-styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Show Us Your Recipe!</h1>
+            <p>Want to show off your culinary skills? <br>Submit your recipe to us! <br>Your submission could be the next featured recipe!</p>
+        </header>
+        <br>
+        <hr>
+        <br>
+        <main>
+            <nav class="recipe-menu">
+                <ul class="recipe-menu-items">
+                    <li><a href="chocolate-chip-cookie-recipe.html">Home</a></li>
+                </ul>
+            </nav>
+            <section class="submission-form">
+                <form action="/submit-recipe" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" size="55" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" size="61" required>
+                        <br>
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" size="48" required>
+                        <br>
+                        <label>Preferred Contact Method:</label>
+                        <input type="radio" id="email" name="contact-method" value="email">
+                        <label for="email">Email</label>
+                        <input type="radio" id="phone" name="contact-method" value="phone">
+                        <label for="phone">Phone</label>
+                        <br>
+                        <button type="reset" style="font-family: 'Yeseva One'; font-size: 18px;">Reset</button>
+                    </fieldset>
+                    <br>
+                    <hr>
+                    <br>
+                    <h2>Recipe Information</h2>
+                    <fieldset>
+                        <legend>Recipe Details:</legend>
+
+                        <label for="recipe-name">Recipe Name:</label>
+                        <input type="text" id="recipe-name" name="details" placeholder="Enter your recipe name" size="51" required>
+                        <br>
+                        <label for="servings">Servings:</label>
+                        <input type="text" id="servings" name="details" placeholder="Enter serving amount" size="57" required>
+                        <br>
+                        <label for="cooktime">Cooktime:</label>
+                        <input type="text" id="cooktime" name="details" placeholder="Enter total cooktime" size="56" required>
+                        <br>
+                        <label>Difficulty:</label>
+                        <input type="radio" id="easy" name="difficulty" value="easy">
+                        <label for="easy">Easy</label>
+
+                        <input type="radio" id="intermediate" name="difficulty" value="intermediate">
+                        <label for="intermediate">Intermediate</label>
+
+                        <input type="radio" id="chef" name="difficulty" value="chef">
+                        <label for="chef">Chef</label>
+                        <br>
+                        <button type="reset" style="font-family: 'Yeseva One'; font-size: 18px;">Reset</button>
+                    </fieldset>
+                    <br>
+                    <hr>
+                    <br>
+                    <fieldset id="ingredientsContainer">
+                        <legend>Ingredients:</legend>
+                        <div class="ingredient-section">
+                            <label for="measurement-1">Measurement:</label>
+                            <input type="text" id="measurement-1" name="measurement[]" placeholder="Enter measurement" size="45" required>
+                            <br>
+                            <label for="ingredient-1">Ingredient:</label>
+                            <input type="text" id="ingredient-1" name="ingredient[]" placeholder="Enter ingredient" size="50" required>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <button type="button" id="addIngredient" style="font-family: 'Yeseva One'; font-size: 18px;">Add another ingredient</button>
+                    <br>
+                    <br>
+                    <button type="reset" style="font-family: 'Yeseva One'; font-size: 18px;">Reset</button>
+                    <button type="submit" style="font-family: 'Yeseva One'; font-size: 18px;">Submit Recipe</button>
+                </form>
+            </section>
+        </main>
+        <script>
+            let ingredientCount = 1;
+        
+            document.getElementById('addIngredient').addEventListener('click', function() {
+                ingredientCount++;
+                const ingredientsContainer = document.getElementById('ingredientsContainer');
+                
+                const newIngredientSection = document.createElement('div');
+                newIngredientSection.classList.add('ingredient-section');
+                
+                newIngredientSection.innerHTML = `
+                    <label for="measurement-${ingredientCount}">Measurement:</label>
+                    <input type="text" id="measurement-${ingredientCount}" name="measurement[]" placeholder="Enter measurement" required>
+                    
+                    <label for="ingredient-${ingredientCount}">Ingredient:</label>
+                    <input type="text" id="ingredient-${ingredientCount}" name="ingredient[]" placeholder="Enter ingredient" required>
+                `;
+                
+                ingredientsContainer.appendChild(newIngredientSection);
+            });
+        </script>
+    </body>
+</html>

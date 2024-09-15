@@ -24,12 +24,21 @@
 /* Raleway */
 @import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
 
+body {
+    margin-left: 140px;
+}
+
 header {
     background-color: navajowhite;
     padding-bottom: 20px;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    background-color: saddlebrown;
+    height: 3px;
 }
 
 h1 {
@@ -53,6 +62,7 @@ h1 + p {
 
 .full-recipe {
     border: 5px outset #ddd;
+    background-color: antiquewhite;
     padding: 40px;
     margin: 20px;
     margin-top: 10px;
@@ -110,9 +120,12 @@ hr + br + p {
 }
 
 footer {
-    background-color: burlywood;
-    color: brown;
+    background-color: rgba(222, 184, 135, 0.76);
+    color: saddlebrown;
     padding: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
 }
 
 .ghirardelli {
